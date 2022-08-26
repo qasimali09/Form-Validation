@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #052347;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  gap: 30px;
+}
+
+.form-group{
+    position: relative;
+}
+
+.error-message{
+    color: #fd6464;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    font-weight: 600;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 0px !important;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  box-shadow: none;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  color: #002856 !important;
+  width: 100% !important;
+  height: 50px;
+  padding: 7px 15px !important;
+  transition: all 0.3s;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+input:not([type="radio"]):not([type="checkbox"]).invalid,
+select.invalid{
+  border-color: #fd6464;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    appearance: none;
+    border: 2px solid transparent;
+    height: 20px;
+    width: 20px;
+    transition: 0.3s all;
+    background-color: transparent;
+    outline: 2px solid #fff;
+    margin-left: 2px;
+}
+
+input[type="radio"]{
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked{
+    background-color: #ffffff;
+    outline-color: #fff;
+    border-color: #002856;
+}
+
+button {
+  color: #ffffff;
+  background-color: #bb1f35;
+  font-size: 16px !important;
+  line-height: 1 !important;
+  padding: 15px 30px 15px;
+  font-weight: 700 !important;
+  border: 2px solid #bb1f35;
+  border-top-color: rgb(187, 31, 53);
+  border-right-color: rgb(187, 31, 53);
+  border-bottom-color: rgb(187, 31, 53);
+  border-left-color: rgb(187, 31, 53);
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 0;
+  -webkit-appearance: none;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  max-width: 100%;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #a11b2e;
+  color: #ffffff;
+  text-decoration: none;
+  border-color: #c13549;
+}
